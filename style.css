@@ -19,7 +19,7 @@ html, body {
     width: 100%;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    padding: 3rem 1rem; /* Garante espaço interno */
+    padding: 3rem 1rem;
   }
   
   #BenTxt {
@@ -27,12 +27,12 @@ html, body {
     margin-bottom: 1.5rem;
   }
   
-  /* Ajuste dos ícones para melhor responsividade */
+  /* Configuração dos ícones em grid */
   .iconsBarra {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap; /* Permite que os ícones quebrem linha em telas pequenas */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 ícones por linha */
+    gap: 1rem; /* Espaçamento entre os ícones */
+    justify-items: center; /* Centraliza os ícones */
     margin-top: 0;
   }
   
@@ -45,34 +45,25 @@ html, body {
   }
   
   .img-icon:hover {
-    transform: scale(1.1); /* Pequeno efeito ao passar o mouse */
+    transform: scale(1.1);
   }
   
   /* 🔹 Ajustes para telas menores */
-  @media (max-width: 992px) {
-    #BenTxt {
-      font-size: 40px;
-    }
-  
-    .img-icon {
-      width: 8em; /* Reduz tamanho dos ícones */
-    }
-  }
-  
   @media (max-width: 768px) {
+    .iconsBarra {
+      grid-template-columns: repeat(2, 1fr); /* Mantém 2 ícones por linha */
+      gap: 1rem;
+    }
+  
     #BenTxt {
       font-size: 35px;
     }
   
-    .iconsBarra {
-      flex-direction: column; /* Ícones em coluna */
-      align-items: center;
-    }
-  
     .img-icon {
-      width: 7em; /* Ajuste do tamanho dos ícones */
+      width: 8em; /* Ícones menores */
     }
   }
+  
 
 
 .Qsomos {
