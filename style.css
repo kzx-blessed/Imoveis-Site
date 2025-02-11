@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 
 html, body {
-  overflow-x: hidden; /* Impede a rolagem lateral */
+  overflow-x: hidden; 
   width: 100%;
 }
 
@@ -27,16 +27,14 @@ html, body {
     margin-bottom: 1.5rem;
   }
   
-  /* Configuração dos ícones em grid */
   .iconsBarra {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2 ícones por linha */
-    gap: 1rem; /* Espaçamento entre os ícones */
-    justify-items: center; /* Centraliza os ícones */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;
+    justify-items: center; 
     margin-top: 0;
   }
   
-  /* Ícones responsivos */
   .img-icon {
     width: 10em;
     height: auto;
@@ -48,10 +46,9 @@ html, body {
     transform: scale(1.1);
   }
   
-  /* 🔹 Ajustes para telas menores */
   @media (max-width: 768px) {
     .iconsBarra {
-      grid-template-columns: repeat(2, 1fr); /* Mantém 2 ícones por linha */
+      grid-template-columns: repeat(2, 1fr); 
       gap: 1rem;
     }
   
@@ -60,7 +57,7 @@ html, body {
     }
   
     .img-icon {
-      width: 8em; /* Ícones menores */
+      width: 8em;
     }
   }
   
@@ -74,7 +71,7 @@ html, body {
 .QsomosTxt h1 {
   font-size: 72px;
   font-family: Anton;
-  padding-top: 30px; /* Corrigido */
+  padding-top: 30px;
   padding-left: 12px;
 }
 
@@ -83,15 +80,13 @@ html, body {
   padding-left: 1rem;
 }
 
-/* Ajuste da imagem para responsividade */
 #imgQsomos {
-  width: 100%; /* Garante que a imagem se ajuste ao container */
-  max-height: 500px; /* Evita que fique muito grande */
-  object-fit: cover; /* Mantém a proporção sem distorcer */
-  padding-left: 0; /* Removido para evitar desalinhamento */
+  width: 100%; 
+  max-height: 500px;
+  object-fit: cover;
+  padding-left: 0;
 }
 
-/* 🔹 Ajustes para telas menores */
 @media (max-width: 768px) {
   .Qsomos {
     flex-direction: column;
@@ -110,7 +105,7 @@ html, body {
   }
 
   #imgQsomos {
-    max-height: 300px; /* Reduz a imagem em telas pequenas */
+    max-height: 300px;
   }
 }
 
@@ -142,7 +137,6 @@ html, body {
   transform: rotateY(-180deg);
 }
 
-/* Frente do Card */
 .flip-card-front, .flip-card-back {
   width: 100%;
   height: 100%;
@@ -164,7 +158,6 @@ html, body {
   font-family: Anton;
 }
 
-/* Verso do Card com Imagem e Filtro Laranja */
 .flip-card-back {
   display: flex;
   flex-direction: column;
@@ -175,7 +168,7 @@ html, body {
   padding: 20px;
   transform: rotateY(-180deg);
   position: absolute;
-  top: 0; /* Garante alinhamento */
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -185,7 +178,6 @@ html, body {
   background-repeat: no-repeat;
 }
 
-/* Filtro Laranja */
 .flip-card-back::before {
   content: "";
   position: absolute;
@@ -193,12 +185,11 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 165, 0, 0.4); /* Opacidade reduzida de 0.6 para 0.4 */
+  background: rgba(255, 165, 0, 0.4); 
   border-radius: 15px;
-  z-index: -1; /* Mantém o filtro atrás do conteúdo */
+  z-index: -1; 
 }
 
-/* Ajustes de Responsividade */
 @media (max-width: 768px) {
   .flip-card {
     height: 250px;
@@ -242,7 +233,6 @@ html, body {
   transform: scale(1);
 }
 
-/* Pequena vibração ao passar o mouse */
 .animated-button:hover {
   animation: shake 0.2s ease-in-out infinite alternate;
 }
