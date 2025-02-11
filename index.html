@@ -13,7 +13,7 @@
     <!--Barra de Navegação-->
     <nav id="Home" class="navbar navbar-expand-lg navColor p-4">
         <div class="container-fluid">
-          <a class="navbar-brand text-darkgray logo" href="#Home"><img src="Images\Logo.png" ></a>
+          <a class="navbar-brand text-darkgray logo" href="#Home"><img src="Images\LogoM.png" style="width: 75%;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -23,7 +23,7 @@
                 <a class="nav-link nav-link1 active text-darkgray" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-darkgray" href="#barra">Benefícios</a>
+                <a class="nav-link text-darkgray" href="#Beneficios">Benefícios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-darkgray" href="#QuemSomos">Quem somos</a>
@@ -114,7 +114,7 @@
     </div>
 
     <!--Barra Benefícios-->
-    <div id="barra"  class="barra">
+    <div id="Beneficios" class="barra">
       <h1 id="BenTxt">Nossos Benefícios</h1>
       <div class="iconsBarra">
         <img src="Images/Icon1.png" class="img-icon img-fluid" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="Financiamento Facilitado" data-content="Parceria com os principais bancos para oferecer taxas reduzidas e parcelas acessíveis. Simule online e conte com nosso suporte para encontrar a melhor opção.">
@@ -155,148 +155,89 @@
 <!--Imoveis-->
 <div id="Imoveis" class="ImoTxt">
   <h1>Nossos Imóveis</h1>
-  </div>
+</div>
 <div class="container my-5">
   <div class="row">
     <!-- Card 1 -->
     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card card-hover">
-        <img src="Images/imovel1.jpg" class="card-img">
-        <div class="card-overlay">
-          <h1>Casa Amarela Guarapuava PR</h1>
-          <div class="card-content">
-            <div class="left">
-              <p><b>Localização:</b>Santa Cruz
-              <p><b>Quartos:</b> 3</p>
-            </div>
-            <div class="separator"></div>
-            <div class="right">
-              <p><b>Área:</b> 200m²</p>
-              <p><b>Área Externa:</b> 100m²</p>
-              <p><b>Preço:</b> R$ 850.000</p>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front position-relative">
+            <span class="badge text-bg-warning position-absolute text-white w-25 top-0 start-0 m-2">Casa</span>
+            <img src="Images/imovel1.jpg" class="card-img">
+          </div>
+          <div class="flip-card-back">
+            <h1>Casa 150m² Bairro Santa Cruz Guarapuava PR</h1>
+              <div class="p-2 m-2">
+                <button type="button" class="animated-button">Mais informações</button>
+              </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card card-hover">
-        <img src="Images/imovel2.jpg" class="card-img">
-        <div class="card-overlay">
-          <h1>Sobrado Rosa Guarapuava PR</h1>
-          <div class="card-content">
-            <div class="left">
-              <p><b>Localização:</b> Batel</p>
-              <p><b>Quartos:</b> 2</p>
-            </div>
-            <div class="separator"></div>
-            <div class="right">
-              <p><b>Área:</b> 150m²</p>
-              <p><b>Preço:</b> R$ 350.000</p>
-            </div>
+     <!-- Card 2 -->
+     <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front position-relative">
+            <span class="badge text-bg-warning position-absolute text-white w-25 top-0 start-0 m-2">Sobrado</span>
+            <img src="Images/imovel2.jpg" class="card-img">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sobrado 130m² Bairro Vila Carli Guarapuava PR</h1>
+              <div class="p-2 m-2">
+                <button type="button" class="animated-button">Mais informações</button>
+              </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card card-hover">
-        <img src="Images/imovel3.jpg" class="card-img">
-        <div class="card-overlay">
-          <h1>Casa Moderna Guarapuava PR</h1>
-          <div class="card-content">
-            <div class="left">
-              <p><b>Localização:</b> Condomínio Cidade dos Lagos</p>
-              <p><b>Quartos:</b> 4</p>
-            </div>
-            <div class="separator"></div>
-            <div class="right">
-              <p><b>Área Externa:</b> 150m²</p>
-              <p><b>Área:</b> 250m²</p>
-              <p><b>Preço:</b> R$ 1.500.000</p>
-            </div>
+     <!-- Card 3 -->
+     <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front position-relative">
+            <span class="badge text-bg-warning position-absolute text-white w-25 top-0 start-0 m-2">Casa</span>
+            <img src="Images/imovel3.jpg" class="card-img">
+          </div>
+          <div class="flip-card-back">
+            <h1>Casa 300m² Condomínio Fechado Cidade dos Lagos Guarapuava PR</h1>
+              <div class="p-2 m-2">
+                <button type="button" class="animated-button">Mais informações</button>
+              </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Card 4 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card card-hover">
-        <img src="Images/imovel1.jpg" class="card-img">
-        <div class="card-overlay">
-          <h1>Casa Amarela Guarapuava PR</h1>
-          <div class="card-content">
-            <div class="left">
-              <p><b>Localização:</b>Santa Cruz
-              <p><b>Quartos:</b> 3</p>
-            </div>
-            <div class="separator"></div>
-            <div class="right">
-              <p><b>Área:</b> 200m²</p>
-              <p><b>Área Externa:</b> 100m²</p>
-              <p><b>Preço:</b> R$ 850.000</p>
-            </div>
+     <!-- Card 1 -->
+     <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front position-relative">
+            <span class="badge text-bg-warning position-absolute text-white w-25 top-0 start-0 m-2">Casa</span>
+            <img src="Images/imovel1.jpg" class="card-img">
+          </div>
+          <div class="flip-card-back">
+            <h1>Casa 150m² Bairro Santa Cruz Guarapuava PR</h1>
+              <div class="p-2 m-2">
+                <button type="button" class="animated-button">Mais informações</button>
+              </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Card 5 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card card-hover">
-        <img src="Images/imovel2.jpg" class="card-img">
-        <div class="card-overlay">
-          <h1>Sobrado Rosa Guarapuava PR</h1>
-          <div class="card-content">
-            <div class="left">
-              <p><b>Localização:</b> Batel</p>
-              <p><b>Quartos:</b> 2</p>
-            </div>
-            <div class="separator"></div>
-            <div class="right">
-              <p><b>Área:</b> 150m²</p>
-              <p><b>Preço:</b> R$ 350.000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card card-hover">
-        <img src="Images/imovel3.jpg" class="card-img">
-        <div class="card-overlay">
-          <h1>Casa Moderna Guarapuava PR</h1>
-          <div class="card-content">
-            <div class="left">
-              <p><b>Localização:</b> Condomínio Cidade dos Lagos</p>
-              <p><b>Quartos:</b> 4</p>
-            </div>
-            <div class="separator"></div>
-            <div class="right">
-              <p><b>Área Externa:</b> 150m²</p>
-              <p><b>Área:</b> 250m²</p>
-              <p><b>Preço:</b> R$ 1.500.000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
-</div>
+
 
 <!--Rodapé-->
-<footer class="footer text-white py-4" style="background-color: rgb(234, 120, 5);">
+<footer class="footer text-white py-4" style="background: linear-gradient(45deg, #ff7e00, #ffbb33);">
   <div class="container">
     <div class="row">
       <!-- Logo e descrição -->
       <div class="col-12 col-md-4">
-        <h3>Morada Imóveis</h3>
+        <img src="Images/LogoMM1.png">
         <p>Transformando sonhos em realidade! Encontre seu lar ideal com segurança e transparência.</p>
       </div>
 
